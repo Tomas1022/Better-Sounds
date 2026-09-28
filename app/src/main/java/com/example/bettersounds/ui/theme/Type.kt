@@ -1,34 +1,33 @@
 package com.example.bettersounds.ui.theme
 
 import androidx.compose.material3.Typography
-import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.sp
+import com.example.bettersounds.R
 
-// Set of Material typography styles to start with
+val Manrope = FontFamily(
+    Font(R.font.manrope_regular, FontWeight.Normal),
+    Font(R.font.manrope_semibold, FontWeight.SemiBold),
+    Font(R.font.manrope_bold, FontWeight.Bold)
+)
+
+private val base = Typography()
+
 val Typography = Typography(
-    bodyLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        lineHeight = 24.sp,
-        letterSpacing = 0.5.sp
-    )
-    /* Other default text styles to override
-    titleLarge = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
-        lineHeight = 28.sp,
-        letterSpacing = 0.sp
-    ),
-    labelSmall = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Medium,
-        fontSize = 11.sp,
-        lineHeight = 16.sp,
-        letterSpacing = 0.5.sp
-    )
-    */
+    displayLarge = base.displayLarge.copy(fontFamily = Manrope),
+    displayMedium = base.displayMedium.copy(fontFamily = Manrope),
+    displaySmall = base.displaySmall.copy(fontFamily = Manrope),
+    headlineLarge = base.headlineLarge.copy(fontFamily = Manrope),
+    headlineMedium = base.headlineMedium.copy(fontFamily = Manrope),
+    headlineSmall = base.headlineSmall.copy(fontFamily = Manrope),
+    titleLarge = base.titleLarge.copy(fontFamily = Manrope),
+    titleMedium = base.titleMedium.copy(fontFamily = Manrope),
+    titleSmall = base.titleSmall.copy(fontFamily = Manrope),
+    bodyLarge = base.bodyLarge.copy(fontFamily = Manrope),
+    bodyMedium = base.bodyMedium.copy(fontFamily = Manrope),
+    bodySmall = base.bodySmall.copy(fontFamily = Manrope),
+    labelLarge = base.labelLarge.copy(fontFamily = Manrope),
+    labelMedium = base.labelMedium.copy(fontFamily = Manrope),
+    labelSmall = base.labelSmall.copy(fontFamily = Manrope)
 )

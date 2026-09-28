@@ -2,10 +2,12 @@ package com.example.bettersounds.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val OscuroFondo = Color(0xFF0D1210)
+val OscuroSuperficie = Color(0xFF16201B)
+val OscuroVerde = Color(0xFF3DDC84)
+val OscuroTexto = Color(0xFFE6F0EA)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val ClaroFondo = Color(0xFFF4F7F5)
+val ClaroSuperficie = Color(0xFFFFFFFF)
+val ClaroVerde = Color(0xFF3F7F6B)
+val ClaroTexto = Color(0xFF1F2A26)
